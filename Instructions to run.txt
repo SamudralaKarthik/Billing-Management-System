@@ -1,0 +1,25 @@
+****Instructions to run our software:******
+
+step 1: download NetBeans link : https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
+
+step 2: download MySQL 5.5 version link: https://www.filehorse.com/download-mysql-64/11001/
+
+step 3: create an account in my SQL command prompt and pls don’t forget to remember your password and execute the following commands in it:
+  a)create database bms;
+  b)use bms;
+  c)create table buyer(name varchar(100),contactNo varchar(10)primary key, email varchar(100),address varchar(500),gender varchar(20));
+  d)create table product(pId int(10),pName varchar(100),rate int(10),description varchar(200),activate varchar(10));
+Note: Now, by using these commands we have created a database in MySQL to store our user and product items data.
+
+step 4:Open NetBeans and open our project file and go to project package in billing management system and to go "Connection Provider" File and change the string in the last line(18th line) which comes after the "root" and change that string to your MySQL password.
+
+step 5:Now, pls add 2 jars that are present in the zip folder with the name r2xml and itext to the Library.
+Add these 2 jar files in your project library else it will show error and it will not run.(Note: If it is included in your library ignore this step) 
+
+Step 6:In the file billing.java on the line number 423 (String path="").. Give your suitable path in your computer to save the billing receipt in ("")field.
+
+Step 7: Now run the code and enjoy our application, thank you for reading our instructions.
+
+In the login page(details):
+User name:bms
+password:admin
